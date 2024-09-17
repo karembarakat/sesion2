@@ -1,62 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
-    <form action="/action_page.php">
-        <fieldset>
-            <legend>Personal Data:</legend>
+<html>
+<head></head>
+    <body>
+        <form action="">
+            <fieldset style="background-color: #811515;  padding:30px 10px;">
+            <legend style="background-color: #004492;">Personal Data</legend>
+            <fieldset style="background-color: #cea00b;">
+                    <legend style="background-color: #60b8ff; padding:30px 0px; font-weight:bold;">YourName</legend>
+                    <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="firstName"> first Name</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="uFirstName" id="firstName" placeholder="ex ahmed" ></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="secondName"> second Name </label></td>
+                            <td>:</td>
+                            <td><input type="text" name="uLastName" id="secondName" placeholder="ex bahnasy" ></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </fieldset>
 
-            <fieldset>
-                <legend>Your Name</legend>
-                <table>
-                    <tr>
-                        <td>
-                            <label for="fname">First name:</label>
-                            <input type="text" id="fname" name="fname"><br/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lname">Last name:</label>
-                            <input type="text" id="lname" name="lname"><br/>
-                        </td>
+                <br><br><br>
 
-                    </tr>
-                </table>
+                    <table>
+                    <tbody style="font-weight:bold;">
+                        <tr>
+                            <td><label for="tel"> your phone </label></td>
+                            <td>:</td>
+                            <td><input type="tel" id="tel" name="uTel" ></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="email"> Email </label></td>
+                            <td>:</td>
+                            <td><input type="email" id="email" name="uEmail" ></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="password"> Password </label></td>
+                            <td>:</td>
+                            <td><input type="password" id="password" name="uPassword"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="rePassword"> Re-Password </label></td>
+                            <td>:</td>
+                            <td><input type="password" id="rePassword" name="uRePassword"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <br><br><br>
+
+                    <input type="radio" id="male" name="uGender" value="male">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="uGender" value="female">
+                    <label for="female">Female</label>
+
+                    <br><br><br>
+
+                    <input type="checkbox" id="student" name="status" value="student">
+                    <label for="student">Student</label>
+                    <br>
+                    <input type="checkbox" id="graduated" name="status" value="graduated">
+                    <label for="graduated">Graduated</label>
+
+
+                    <br><br><br>
+
+                    <select name="uUniversity">
+                        <optgroup label="cairo" >
+                            <option value="CairoUniversity"> Cairo University </option>
+                        </optgroup>
+                        <optgroup label="alexandria" >
+                            <option value="AlexandriaUniversity"> Alexandria University </option>
+                            <option value="PharosUniversity"> Pharos University </option>
+                        </optgroup>
+                        <optgroup label="Saudi Arabia" >
+                            <option value="KingAbdulAzizUniversity"> King AbdulAziz University </option>
+                            <option value="TaifUniversity"> Taif University </option>
+                            <option value="KingKhalidUniversity"> King Khalid University </option>
+                        </optgroup>
+                    </select>
+
+                    <br>
+                    <button style="background-image:url('/img/btn.jpg'); color:#fff">SUBMIT</button>
             </fieldset>
-            <table>
-                <tr>
-                    <td>
-                        <label for="fname">Your name:</label>
-                        <input type="text" id="fname" name="fname"><br/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="lname">Email:</label>
-                        <input type="text" id="lname" name="lname"><br/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="lname">Password:</label>
-                        <input type="text" id="lname" name="lname"><br/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="lname">Re-Password:</label>
-                        <input type="text" id="lname" name="lname"><br/>
-                    </td>
-                </tr>
-            </table>
-            <input type="submit" value="Submit">
-            
-        </fieldset>
-    </form>
-</body>
+        </form>
+    </body>
 </html>
